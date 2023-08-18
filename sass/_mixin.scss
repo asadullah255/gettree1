@@ -1,0 +1,249 @@
+@mixin iconsearch {
+    background-color: $social__color;
+    padding: 0.6rem;
+    border-radius: 50%;
+    color: white;
+}
+@mixin iconshop {
+    background-color: $social__color;
+    padding: 0.6rem;
+    border-radius: 50%;
+    color: white;
+}
+@mixin btn_btn {
+    border: 0.18rem solid $social__color;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 2rem;
+    color: $social__color;
+    transition: all 0.2s;
+    &:hover{
+        border: 0.18rem solid $social__color;
+        text-decoration: none;
+        background-color: $social__color;
+        padding: 8px 18px;
+        border-radius: 2rem;
+        color: white;
+    }
+}
+@mixin banner {
+    position: relative;
+    background-image: url(../images/banner.jpg);
+    width: 100%;
+    height: auto;
+    min-height: 81vh;
+    background-size: cover;
+    z-index: -1;
+     &::before{
+        top: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 81vh;
+        background-color: rgba(0, 128, 0, 0.507);
+        z-index: -1;
+    }    
+}
+@mixin services {
+    padding: 3rem;
+    margin-top: 4rem;
+    position: relative;
+    background-image: url(../images/banana.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    &::before{
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 128, 0, 0.603);
+        z-index: -1;   
+}
+}
+@mixin card {
+    margin-top: 2rem;
+    background-color: #e8f6e9;
+    padding: 1rem;
+    z-index: 1000;
+    p{
+        padding: 0 0 15px 0px;
+        border-bottom: 0.2rem solid rgba(204, 204, 204, 0.514);
+    }
+    h4{
+        font-weight: 700;
+    }    
+}
+@mixin center__content {
+    position: absolute;
+    top: 84%;
+    left: 9%;
+    padding: 1.5rem;
+    width: 75%;
+    background-color: #fdfdfd;    
+}
+@mixin get__inside {
+    text-decoration: none;
+    color: white;
+    background-color: $social__color;
+    padding: 0.7rem;
+    border-radius: 0.5rem;    
+}
+@mixin ordernow {
+    border-radius: 0.5rem;
+    background-color: white;
+    color: $social__color;
+    border: 0.2rem solid $social__color;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s all ease-in;
+    &:hover{
+        border-radius: 0.5rem;
+        background-color: $social__color;
+        color: white;
+        border: 0.2rem solid $social__color;
+        padding: 6px 12px;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+}
+@mixin gardenover {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #37893a82;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+@mixin content-overflow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+@mixin over-box {
+    border-top: 0.5rem solid $social__color;
+    padding: 1rem;
+    width: 100%;
+    top: 27%;
+    left: 6%;
+    position: absolute;
+    width: 260px;
+    height: 270px;
+    background-color: #ffffff;
+}
+@mixin blog-con {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+@mixin footer-icon {
+    background-color: white;
+    padding: 0.5rem;
+    color: #43b143;
+    font-size: 1.3rem;
+    transition: 0.3s all ease-out;
+    &:hover{
+        background-color: #43b143;
+        padding: 0.5rem;
+        color: white;
+        font-size: 1.3rem;      
+    }
+}
+@mixin inside-footer-h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    border-bottom:0.2rem solid #29a329 ;
+    padding-bottom: 0.4rem;
+    width: 8rem;
+}
+@mixin blog-con-h5 {
+    font-size: 1rem;
+    padding: 0.2rem;
+    width: 9rem;
+    text-align: center;
+    background-color:#e8f6e9;
+}
+@mixin seen {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: $social__color;
+    color: white;
+    border-radius: 0.5rem;
+}
+@mixin simple {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .firest3{
+        background-color: $social__color;
+        padding: 1.3rem;
+        border-radius: 0.5rem;
+        color: white;
+    }
+    .firest2{
+        background-color: $social__color;
+        padding: 1.3rem;
+        border-radius: 0.5rem;
+        color: white;
+    }
+    .firest1{
+        background-color: $social__color;
+        border-radius: 0.5rem;
+        padding: 1.3rem;
+        color: white;
+    }
+}
+
+@mixin read {
+    padding: 0.3rem;
+    text-decoration: none;
+    color: $social__color;
+    background-color: #e8f6e9;
+}
+
+@mixin about_page {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(12 113 12 / 49%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@mixin myclick {
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    width: 100%;
+    background-color: #43b143;
+    padding: 0.8rem;
+    border:none;
+}
+
+@mixin message {
+    border: 0.1rem solid rgb(214, 214, 214);
+    height: 8rem;
+    outline: none;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    &:focus{
+        border: 0.1rem solid #43b143;
+    }
+}
